@@ -134,7 +134,7 @@ input[type="search"]::-webkit-input-placeholder {
 .info{
     display: flex;
     align-items: center;
-    margin: 30px 20px 0 10px;
+    margin: 30px 20px 20px 10px;
 }
 .info span{
     width: 24px;
@@ -164,6 +164,25 @@ input[type="search"]::-webkit-input-placeholder {
     height: 100%;
     background: #F2F2F2;
     border-radius: 20px;
+    padding: 40px;
+}
+.lodgingMarseille h1{
+    font-size: 22px;
+    line-height: 26px;
+}
+.logements{
+    margin-top: 25px;
+    display: flex;
+    justify-content: space-between;
+    flex-flow: row wrap;
+}
+/* Card */
+.card{
+    width: 210px;
+    height: 200px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 20px;
 }
 .mostPopular{
     width: 30%;
