@@ -62,6 +62,9 @@ button{
 .findLodging h1{
     font-size: 22px;
 }
+.findLodging p {
+    margin-top: 10px;
+}
 .searchBar{
     display: flex;
     margin-top: 20px;
@@ -114,6 +117,7 @@ input[type="search"]::-webkit-input-placeholder {
     margin: 0 10px;
     font-size: 17px;
     line-height: 20px;
+    font-weight: bold;
     padding: 15px;
     border: 2px solid #D9D9D9;
     border-radius: 25px;
