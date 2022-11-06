@@ -31,25 +31,32 @@ button{
 .navigation ul {
     display: flex;
 }
+.navigation ul li {
+    position: relative;
+}
 .navigation ul li a {
     font-size: 16px;
     color: black;
     margin: 0 15px;
     padding-top: 10px;
 }
+
 /* active button style */
-.active{
-    color:#0065FC;
-    position: relative;
-}
-.active::before{
+.navigation ul li a::before{
     content: "";
     width: 162px;
     height: 2px;
     background-color: #0065FC;
     position: absolute;
-    top: -10px;
+    top: -20px;
     left: -20px;
+    display: none;
+}
+.navigation ul li a:hover{
+    color: #0065FC;
+}
+.navigation ul li a:hover::before{
+    display: block;
 }
 
 /* *** */
@@ -84,12 +91,12 @@ input[type="search"]{
     text-align: center;
     border: 1px solid #F2F2F2;
 }
-input[type="search"]::-webkit-input-placeholder {
+input::placeholder {
     font-weight: 700;
     font-size: 18px;
     line-height: 21px;
 }
-.searchBar button{
+.searchBar input[type="button"]{
     width: 132px;
     border: none;
     border-radius: 0px 15px 15px 0px;
@@ -151,9 +158,9 @@ input[type="search"]::-webkit-input-placeholder {
 }
 
 /* MAIN */
-.lodging{
+#lodging{
     width: 100%;
-    height: 630px;
+    /* height: 630px; */
     /* background-color: red; */
     display: flex;
     justify-content: space-between;
@@ -176,6 +183,10 @@ input[type="search"]::-webkit-input-placeholder {
     justify-content: space-between;
     flex-flow: row wrap;
 }
+.logements a {
+    width: 30%;
+    height: 100%;
+}
 /* Card */
 .card{
     width: 210px;
@@ -183,10 +194,111 @@ input[type="search"]::-webkit-input-placeholder {
     background: #FFFFFF;
     border-radius: 20px;
     margin-top: 20px;
+    padding: 4px;
 }
+.card img {
+    width: 100%;
+    height: 60%;
+    border-radius: 20px 20px 0 0;
+}
+.card figcaption{
+    width: 100%;
+    height: 40%;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-evenly;
+    margin-left: 10px;
+}
+.card figcaption h3{
+    font-size: 16px;
+    line-height: 19px;
+    color: black;
+}
+.card figcaption p {
+    font-size: 14px;
+    color: black;
+}
+.stars i{
+    width: 12px;
+    height: 12px;
+    margin-right: 5px;
+    color: #0065FC;
+}
+
+.see-more{
+    margin-top: 30px;
+    font-size: 18px;
+    line-height: 21px;
+    color: #000000;
+    cursor: pointer;
+}
+
+/* ************* */
 .mostPopular{
     width: 30%;
-    height: 100%;
+    /* height: 100%; */
     background: #F2F2F2;
     border-radius: 20px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.shart-line{
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+}
+.shart-line h1{
+    font-size: 22px;
+    line-height: 26px;
+    font-weight: 700;
+}
+.shart-line i{
+    height: 15.75px;
+    width: 18px;
+    color: #0065FC;
+}
+
+/* *** Most popular Card */
+.popularLodging{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-content: space-between;
+    margin-top: 20px;
+}
+.mostPopularCard{
+    height: 144px;
+    width: 280px;
+    display: flex;
+    flex-direction: row;
+    border-radius: 20px;
+    padding: 4px;
+    background: #FFFFFF;
+}
+.mostPopularCard img{
+    width: 43%;
+    border-radius: 20px 0px 0px 20px;
+}
+.mostPopularCard figcaption{
+    display: flex;
+    flex-direction: column;
+    padding: 10px;
+    position: relative;
+}
+.mostPopularCard figcaption h3{
+    font-size: 16px;
+    line-height: 19px;
+    color: #000000;
+}
+.mostPopularCard figcaption p{
+    margin-top: 5px;
+    font-size: 14px;
+    color: #000000;
+}
+.mostPopularCard figcaption .stars{
+    position: absolute;
+    bottom: 5px;
 }

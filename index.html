@@ -13,26 +13,30 @@
     <title>Booki</title>
 </head>
 <body>
-    <header>
-        <div class="max-width">
+    <!-- HEADER -->
+    <header class="max-width">
             <nav class="navigation">
                 <div class="logo">
-                    <img src="./Images Booki/logo/Booki@3x.png" alt="logo">
+                    <a href="#"><img src="./Images Booki/logo/Booki@3x.png" alt="logo"></a> 
                 </div>
                 <ul>
-                    <li><a class="active" href="#">Hébergements</a></li>
+                    <li><a href="#">Hébergements</a></li>
                     <li><a href="#">Activités</a></li>
                 </ul>
             </nav>
+    </header>
+     <!-- MAIN -->
+     <main class="max-width">
             <section class="findLodging">
                 <h1>Trouvez votre hébergement pour des vacances de rêve</h1>
                 <p>En plein centre-ville ou en pleine nature</p>
-                <div class="searchBar">
-                    <div class="mapIcon"><i class="fa-solid fa-location-dot"></i></div>
-                    <div><input type="search" placeholder="Marseille, France"></div>
-                    <button>Rechercher</button>
-                </div>
+                <form class="searchBar">
+                    <label for="icon" class="mapIcon"><i class="fa-solid fa-location-dot"></i></label>
+                    <input type="search" placeholder="Marseille, France">
+                    <input type="button" value="Rechercher">
+                </form>
             </section>
+
             <section class="filtre">
                 <h1>Filtres</h1>
                 <button><i class="fa-solid fa-money-bill-wave"></i>Économique</button>
@@ -40,49 +44,100 @@
                 <button><i class="fa-solid fa-heart"></i>Romantique</button>
                 <button><i class="fa-solid fa-dog"></i>Animaux autorisés</button>
             </section>
+
             <div class="info"><span><i class="fa-solid fa-info"></i></span>
                 <p>Plus de 500 logements sont disponibles dans cette ville</p>
             </div>
-        </div>
-    </header>
-    <!-- MAIN -->
-    <main>
-        <div class="max-width">
-            <section class="lodging">
+
+            <section id="lodging">
                 <article class="lodgingMarseille">
                     <h1>Hébergements à Marseille</h1>
                     <div class="logements">
-                        <div class="card">
-                            <div class="image"></div>
-                            <div class="description"></div>
-                        </div>
-                        <div class="card">
-                            <div class="image"></div>
-                            <div class="description"></div>
-                        </div>
-                        <div class="card">
-                            <div class="image"></div>
-                            <div class="description"></div>
-                        </div>
-                        <div class="card">
-                            <div class="image"></div>
-                            <div class="description"></div>
-                        </div>
-                        <div class="card">
-                            <div class="image"></div>
-                            <div class="description"></div>
-                        </div>
-                        <div class="card">
-                            <div class="image"></div>
-                            <div class="description"></div>
-                        </div>
+                        <a href="#"><figure class="card">
+                            <img src="./Images Booki/hebergements/4_small/marcus-loke-WQJvWU_HZFo-unsplash.jpg" alt="marcus loke's lodging">
+                           <figcaption>
+                            <h3>Auberge La Canebière</h3>
+                            <p>Nuit à partir de 25€</p>
+                            <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                           </figcaption>
+                        </figure></a>
+                        <a href="#"><figure class="card">
+                            <img src="./Images Booki/hebergements/4_small/fred-kleber-gTbaxaVLvsg-unsplash.jpg" alt="Hotel du port">
+                           <figcaption>
+                            <h3>Hôtel du port</h3>
+                            <p>Nuit à partir de 52€</p>
+                            <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                           </figcaption>
+                        </figure></a>
+                        <a href="#"><figure class="card">
+                            <img src="./Images Booki/hebergements/4_small/reisetopia-B8WIgxA_PFU-unsplash.jpg" alt="Hotel Les mouettes">
+                           <figcaption>
+                            <h3>Hôtel Les mouettes</h3>
+                            <p>Nuit à partir de 76€</p>
+                            <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                           </figcaption>
+                        </figure></a>
+                        <a href="#"><figure class="card">
+                            <img src="./Images Booki/hebergements/4_small/annie-spratt-Eg1qcIitAuA-unsplash.jpg" alt="Hotel de mer">
+                           <figcaption>
+                            <h3>Hôtel de la mer</h3>
+                            <p>Nuit à partir de 46€</p>
+                            <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                           </figcaption>
+                        </figure></a>
+                        <a href="#"><figure class="card">
+                            <img src="./Images Booki/hebergements/4_small/nicate-lee-kT-ZyaiwBe0-unsplash.jpg" alt="Auberge Le panier">
+                           <figcaption>
+                            <h3>Auberge Le Panier</h3>
+                            <p>Nuit à partir de 23€</p>
+                            <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                           </figcaption>
+                        </figure></a>
+                        <a href="#"><figure class="card">
+                            <img src="./Images Booki/hebergements/4_small/febrian-zakaria-M6S1WvfW68A-unsplash.jpg" alt="Hotel Chez Amina">
+                           <figcaption>
+                            <h3>Hôtel Chez Amina</h3>
+                            <p>Nuit à partir de 96€</p>
+                            <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                           </figcaption>
+                        </figure></a>
                     </div>
+                    <h2 class="see-more"<a href="#">Afficher plus</a></h2>
                 </article>
                 <aside class="mostPopular">
-
+                    <div class="shart-line">
+                        <h1>Les plus populaires</h1>
+                        <i class="fa-solid fa-chart-line"></i>
+                    </div>
+                    <div class="popularLodging">
+                        <a href="#"><figure class="mostPopularCard">
+                            <img src="./Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                            <figcaption>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                                <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                            </figcaption>
+                        </figure></a>
+                        <a href="#"><figure class="mostPopularCard">
+                            <img src="./Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                            <figcaption>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                                <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                            </figcaption>
+                        </figure></a>
+                        <a href="#"><figure class="mostPopularCard">
+                            <img src="./Images Booki/hebergements/4_small/emile-guillemot-Bj_rcSC5XfE-unsplash.jpg" alt="">
+                            <figcaption>
+                                <h3>Hôtel Le soleil du matin</h3>
+                                <p>Nuit à partir de 128€</p>
+                                <div class="stars"><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-sharp fa-solid fa-star"></i><i class="fa-thin fa-star"></i></div>
+                            </figcaption>
+                        </figure></a>
+                    </div>
+                    
                 </aside>
             </section>
-        </div>
     </main>
 </body>
 </html>
