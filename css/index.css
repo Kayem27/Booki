@@ -16,7 +16,7 @@ html{
 }
 .max-width {
 	max-width: 1400px;
-	/* padding: 0 80px; */
+	padding: 0 10px;
 	margin: auto;
 }
 button{
@@ -75,7 +75,7 @@ figure:hover{
     display: flex;
     flex-direction: column;
 }
-.findLodging h1{
+.findLodging h2{
     font-size: 22px;
 }
 .findLodging p {
