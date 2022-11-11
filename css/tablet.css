@@ -1,0 +1,52 @@
+@media  (max-width:992px) {
+    /* *** */
+    .filtreItems{
+        display: flex;
+    }
+    .filtreItems button{
+        margin: 0 3px;
+    }
+
+    /* ***** */
+    #lodging{
+        flex-direction: column;
+    }
+    .lodgingMarseille{
+        width: 100%;
+    }
+
+    /* *** */
+    .mostPopular{
+        width: 100%;
+        margin-top: 30px;
+    }
+    .mostPopularCard figcaption h3{
+        line-height: 16px;
+    }
+    .popularLodging{
+        width: 100%;
+        flex-direction: row;
+        justify-content: space-between;
+    }
+    .popularLodging a{
+        width: 32%;
+    }
+
+    /* *** */
+    .activityCard{
+        height: 280px;
+    }
+    .activityCard img{
+        height: 85%;
+    }
+    .activityCard figcaption{
+        height: 15%;
+    }
+    .activityCard figcaption h3{
+        margin-left: 16px;
+    }
+    /* *** */
+    footer .navBottom{
+        width: 85%;
+    }
+}

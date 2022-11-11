@@ -1,5 +1,26 @@
-@media  (max-width:900px) {
-    body{
-        background-color: red;
+@media (max-width:768px) {
+    /* HEADER */
+    .navigation{
+        flex-direction: column;
+        align-items: center;
+    }
+    .navigation ul{
+        display: flex;
+        width: 100%;
+        justify-content: space-between;
+        margin-top: 20px;
+    }
+
+    /* *** */
+    .searchBar button{
+        display: block;
+    }
+    .searchBar input[type="button"]{
+        display: none;
+    }
+
+    /* *** */
+    #lodging{
+        flex-direction: column-reverse;
     }
 }
