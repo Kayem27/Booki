@@ -15,11 +15,28 @@
         width: 100%;
         justify-content: space-between;
         margin-top: 20px;
+        border-bottom: 3px solid #D9D9D9;
+    }
+    .navigation ul li{
+        margin-bottom: 20px;
+    }
+    .navigation ul li a::before{
+        top: 40px;
     }
 
     /* *** à changer */
+    .filtre{
+        align-items: baseline;
+        flex-direction: column;
+    }
+    .filtre button{
+        width: 45%;
+    }
     .filtreItems{
         flex-wrap: wrap;
+        margin-top: 20px;
+        align-items: center;
+        gap: 15px;
     }
 
     /* *** */
@@ -72,4 +89,6 @@
     .see-more{
         display: none;
     }
+
+    
 }

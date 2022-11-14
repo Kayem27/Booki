@@ -219,6 +219,7 @@ input::placeholder {
     border-radius: 20px;
     margin-top: 20px;
     padding: 4px;
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.6);
 }
 .card img {
     width: 100%;
@@ -359,7 +360,8 @@ input::placeholder {
     /* width: 302px; */
     border-radius: 20px;
     /* -webkit-box-shadow: 5px 6px 20px 6px rgba(0,0,0,0.32);  */
-    box-shadow: 5px 6px 20px 6px rgba(0,0,0,0.32);
+    /* box-shadow: 5px 6px 20px 6px rgba(0,0,0,0.32); */
+    box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.6);
 }
 .activityCard img{
     width: 100%;
