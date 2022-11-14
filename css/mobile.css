@@ -11,6 +11,11 @@
         margin-top: 20px;
     }
 
+    /* *** à changer */
+    .filtreItems{
+        flex-wrap: wrap;
+    }
+
     /* *** */
     .searchBar button{
         display: block;
@@ -22,5 +27,27 @@
     /* *** */
     #lodging{
         flex-direction: column-reverse;
+    }
+    .popularLodging{
+        flex-direction: column;
+    }
+    .popularLodging a{
+        width: 100%;
+        margin-bottom: 10px;
+    }
+
+    /* **** */
+    .logements{
+        flex-direction: column;
+    }
+    .logements a {
+        width: 100%;
+    }
+    /*  */
+    .theActivities{
+        flex-direction: column;
+    }
+    .navBottom{
+        flex-direction: column;
     }
 }
