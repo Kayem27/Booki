@@ -90,5 +90,7 @@
         display: none;
     }
 
-    
+    footer{
+        width: 100%;
+    }
 }
