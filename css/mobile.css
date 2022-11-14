@@ -31,6 +31,12 @@
     }
     .filtre button{
         width: 45%;
+        font-size: 14px;
+        line-height: 13px
+    }
+    .filtre button i{
+        margin-right: 7px;
+        font-size: 17px;
     }
     .filtreItems{
         flex-wrap: wrap;
