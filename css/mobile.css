@@ -1,4 +1,10 @@
 @media (max-width:768px) {
+    .max-width{
+        padding: 0;
+    }
+    .findLodging, .filtre, .info, #activity{
+        padding: 0 5%;
+    }
     /* HEADER */
     .navigation{
         flex-direction: column;
@@ -27,6 +33,8 @@
     /* *** */
     #lodging{
         flex-direction: column-reverse;
+        gap: 20px;
+        padding: 0;
     }
     .popularLodging{
         flex-direction: column;
@@ -37,6 +45,12 @@
     }
 
     /* **** */
+    .lodgingMarseille, .mostPopular{
+        border-radius: 0px;
+    }
+    .lodgingMarseille{
+        background-color: #fff;
+    }
     .logements{
         flex-direction: column;
     }
@@ -44,10 +58,18 @@
         width: 100%;
     }
     /*  */
+    #activity{
+        margin-top: 80px;
+    }
     .theActivities{
         flex-direction: column;
     }
     .navBottom{
         flex-direction: column;
+    }
+    /* ** */
+
+    .see-more{
+        display: none;
     }
 }
