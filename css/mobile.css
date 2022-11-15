@@ -5,6 +5,9 @@
     .findLodging, .filtre, .info, #activity{
         padding: 0 5%;
     }
+    .br{
+        display: block;
+    }
     /* HEADER */
     .navigation{
         flex-direction: column;
@@ -18,7 +21,9 @@
         border-bottom: 3px solid #D9D9D9;
     }
     .navigation ul li{
+        width: 50%;
         margin-bottom: 20px;
+        text-align: center;
     }
     .navigation ul li a::before{
         top: 40px;
@@ -31,8 +36,9 @@
     }
     .filtre button{
         width: 45%;
-        font-size: 14px;
-        line-height: 13px
+        font-size: 11px;
+        line-height: 13px;
+        white-space: nowrap;
     }
     .filtre button i{
         margin-right: 7px;
@@ -51,6 +57,9 @@
     }
     .searchBar input[type="button"]{
         display: none;
+    }
+    .info span{
+        padding: 10px;
     }
 
     /* *** */
@@ -90,9 +99,21 @@
     .navBottom{
         flex-direction: column;
     }
+    .activityCard{
+        height: 199px;
+    }
+    .activityCard img{
+        height: 70%;
+    }
+    .activityCard figcaption{
+        height: 30%
+    };
     /* ** */
 
-    .see-more{
+    .see-more, .see-more a{
+        display: none;
+    }
+    .see-more a{
         display: none;
     }
 
