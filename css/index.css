@@ -11,7 +11,7 @@ body{
     font-family: 'Raleway', sans-serif;
 }
 html{
-    /* -webkit-scroll-behavior: smooth; */
+    -webkit-scroll-behavior: smooth;
     scroll-behavior: smooth;
 }
 .max-width {
@@ -31,11 +31,11 @@ figure:hover{
     scale: 1.1;
     transition: all .2s ease-in-out;
 }
+
 /*** HEADER STYLE ***/
 .navigation{
     display: flex;
     justify-content: space-between;
-    /* border: 1px solid black; */
     margin-top: 20px;
 }
 .logo img{
@@ -54,7 +54,7 @@ figure:hover{
     padding-top: 10px;
 }
 
-/* active button style */
+/* hover button style */
 .navigation ul li a::before{
     content: "";
     width: 100%;
@@ -72,12 +72,12 @@ figure:hover{
     display: block;
 }
 
-/* *** */
+/*** Main ***/
 /* Section FindLodging */
 .findLodging{
-    margin-top: 50px;
     display: flex;
     flex-direction: column;
+    margin-top: 50px;
 }
 .findLodging h2{
     font-size: 22px;
@@ -90,12 +90,12 @@ figure:hover{
     margin-top: 20px;
 }
 .searchBar .mapIcon{
-    width: 50px;
-    height: 49px;
     display: flex;
-    background-color: #F2F2F2;
     justify-content: center;
     align-items: center;
+    width: 50px;
+    height: 49px;
+    background-color: #F2F2F2;
     border-radius: 15px 0px 0px 15px;
 }
 input[type="search"]{
@@ -120,20 +120,19 @@ input::placeholder {
     line-height: 21px; ;
 }
 .searchBar button{
+    display: none;
     width: 49px;
     border: none;
     border-radius: 0px 15px 15px 0px;
     background: #0065FC;
     color: white;
-    display: none;
-
 }
 
 /* Section Filtre */
 .filtre{
     display: flex;
-    margin-top: 30px;
     align-items: center;
+    margin-top: 30px;
 }
 .filtreItems{
     display: flex;
@@ -144,7 +143,6 @@ input::placeholder {
     margin: 0 10px;
 }
 .filtre button {
-    /* width: 100px; */
     display: flex;
     align-items: center;
     height: 50px;
@@ -164,7 +162,8 @@ input::placeholder {
     margin-right: 15px;
     color: #0065FC;
 }
-/*** info ***/
+
+/* info */
 .info{
     display: flex;
     align-items: center;
@@ -184,13 +183,11 @@ input::placeholder {
     color: #0065FC;
 }
 
-/* MAIN */
+/* section lodging */
 #lodging{
-    width: 100%;
-    /* height: 630px; */
-    /* background-color: red; */
     display: flex;
     justify-content: space-between;
+    width: 100%;
     padding: 10px;
 }
 .lodgingMarseille{
@@ -205,7 +202,6 @@ input::placeholder {
     line-height: 26px;
 }
 .logements{
-    /* margin-top: 25px; */
     display: flex;
     justify-content: space-between;
     flex-flow: row wrap;
@@ -214,6 +210,7 @@ input::placeholder {
     width: 30%;
     height: 100%;
 }
+
 /* Card */
 .card{
     width: 100%;
@@ -268,11 +265,10 @@ input::placeholder {
     cursor: pointer;
 }
 
-/* ************* */
+/* aside most popular */
 .mostPopular{
     display: flex;
     width: 30%;
-    /* height: 100%; */
     border-radius: 20px;
     padding: 20px;
     flex-direction: column;
@@ -306,9 +302,8 @@ input::placeholder {
     margin-top: 20px;
 }
 .mostPopularCard{
-    /* width: 343px; */
-    height: 144px;
     display: flex;
+    height: 144px;
     flex-direction: row;
     border-radius: 20px;
     padding: 4px;
@@ -340,7 +335,7 @@ input::placeholder {
     bottom: 1px;
 }
 
-/* ***** */
+/* section Activity */
 #activity{
     margin-top: 30px;
 }
@@ -360,10 +355,7 @@ input::placeholder {
 }
 .activityCard{
     height: 444.5px;
-    /* width: 302px; */
     border-radius: 20px;
-    /* -webkit-box-shadow: 5px 6px 20px 6px rgba(0,0,0,0.32);  */
-    /* box-shadow: 5px 6px 20px 6px rgba(0,0,0,0.32); */
     box-shadow: 4px 4px 5px -2px rgba(0,0,0,0.6);
 }
 .activityCard img{
@@ -390,9 +382,7 @@ footer{
     max-width: 1220px !important;
     position: relative;
     top: 50px;
-    /* height: 225px; */
     width: 90%;
-    /* padding: 15px; */
     background: #F2F2F2;
 
 }
