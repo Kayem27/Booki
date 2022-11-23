@@ -16,7 +16,7 @@ html{
 }
 .max-width {
 	max-width: 1400px;
-	padding: 0 5%;
+    width: 94%;
 	margin: auto;
 }
 button{
@@ -28,7 +28,7 @@ button{
 
 /* Animation Figure */
 figure:hover{
-    scale: 1.1;
+    transform: scale(1.1);
     transition: all .2s ease-in-out;
 }
 
@@ -379,10 +379,8 @@ input::placeholder {
 /****** FOOTER ******/
 footer{
     display: flex;
-    max-width: 1220px !important;
     position: relative;
     top: 50px;
-    width: 90%;
     background: #F2F2F2;
 
 }
@@ -390,14 +388,16 @@ footer .navBottom{
     display: flex;
     width: 70%;
     justify-content: space-between;
-    margin-left: 20px;
+    margin-left: 40px;
+}
+footer .navBottom div{
+    margin-top: 40px;
 }
 footer .navBottom nav{
     display: flex;
     flex-direction: column;
-    margin-top: 40px;
 }
-footer nav h3{
+footer div h3{
     font-size: 18px;
     line-height: 21px;
     margin-bottom: 20px;

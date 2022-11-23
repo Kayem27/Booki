@@ -1,6 +1,7 @@
 @media (max-width:768px) {
     .max-width{
         padding: 0;
+        width: 100%;
     }
     .findLodging, .filtre, .info, #activity{
         padding: 0 5%;
@@ -106,8 +107,8 @@
         height: 70%;
     }
     .activityCard figcaption{
-        height: 30%
-    };
+        height: 30%;
+    }
     /* ** */
 
     .see-more, .see-more a{
