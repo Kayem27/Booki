@@ -36,8 +36,8 @@
         flex-direction: column;
     }
     .filtre button{
-        width: 45%;
-        font-size: 11px;
+        width: 47%;
+        font-size: 10px;
         line-height: 13px;
         white-space: nowrap;
     }
@@ -47,9 +47,10 @@
     }
     .filtreItems{
         flex-wrap: wrap;
+        margin:auto;
         margin-top: 20px;
         align-items: center;
-        gap: 15px;
+        gap: 5px;
     }
 
     /* *** */
